@@ -12,7 +12,7 @@
                           rows="10"></textarea>
             </div>
             <button type="submit" class="btn btn-info">Сохранить</button>
-            <a href="/admin/" type="button" class="btn btn-secondary">Отменить</a>
+            <a href="/?ctrl=admin" type="button" class="btn btn-secondary">Отменить</a>
         </form>
 
     </div>
