@@ -7,7 +7,7 @@
                 if ($this->articles){
                 foreach ($this->articles as $a):?>
                     <div class="note">
-                        <div class="head"><a href="<?php echo '/news/article.php?id=' . $a->id; ?>"><?php echo $a->title;?>| автор <?php echo $a->author->name;?></a>
+                        <div class="head"><a href="<?php echo '/?ctrl=article&id=' . $a->id; ?>"><?php echo $a->title;?>| автор <?php echo $a->author->name;?></a>
                         </div>
                     </div>
                 <?php

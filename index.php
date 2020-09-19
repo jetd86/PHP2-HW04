@@ -2,5 +2,10 @@
 require_once  __DIR__ . '/autoload.php';
 
 
-$ctrl = new App\Controllers\Index();
+
+$ctrName = isset($_GET['ctrl'] ) ? ucfirst($_GET['ctrl']) : 'Index';
+$ctrlClass = '\App\Controllers\\' . $ctrName;
+
+$ctrl = new $ctrlClass;
 $ctrl->action();
+
