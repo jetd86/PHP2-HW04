@@ -22,8 +22,8 @@ class Article extends Controller
 
         $this->view->article = ArticleModel::findById($_GET['id']);
 
-        $this->view->display(__DIR__ . '/../../templates/header_html.php');
-        $this->view->display(__DIR__ . '/../../templates/article_html.php');
-        $this->view->display(__DIR__ . '/../../templates/footer_html.php');
+        echo $this->view->render(__DIR__ . '/../../templates/header_html.php');
+        echo $this->view->render(__DIR__ . '/../../templates/article_html.php');
+        echo $this->view->render(__DIR__ . '/../../templates/footer_html.php');
     }
 }

@@ -10,8 +10,8 @@ class Index extends Controller
     protected function handle()
     {
         $this->view->articles = Article::getLimitRows(4);
-        $this->view->display(__DIR__ . '/../../templates/header_html.php');
-        $this->view->display(__DIR__ . '/../../templates/news_html.php');
-        $this->view->display(__DIR__ . '/../../templates/footer_html.php');
+        echo $this->view->render(__DIR__ . '/../../templates/header_html.php');
+        echo $this->view->render(__DIR__ . '/../../templates/news_html.php');
+        echo $this->view->render(__DIR__ . '/../../templates/footer_html.php');
     }
 }

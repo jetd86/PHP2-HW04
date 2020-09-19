@@ -18,12 +18,12 @@ class Add extends Controller
             $art->title = $_POST['title'];
             $art->contents= $_POST['contents'];
             $art->save();
-            header('Location: /admin/');
+            header('Location: /?ctrl=admin');
             exit;
         }
 
-        $this->view->display(__DIR__ . '/../../../../templates/header_html.php');
-        $this->view->display(__DIR__. '/../../../../templates/add_new_article_html.php');
-        $this->view->display(__DIR__ . '/../../../../templates/footer_html.php');
+        echo $this->view->render(__DIR__ . '/../../../../templates/header_html.php');
+        echo $this->view->render(__DIR__ . '/../../../../templates/add_new_article_html.php');
+        echo $this->view->render(__DIR__ . '/../../../../templates/footer_html.php');
     }
 }
