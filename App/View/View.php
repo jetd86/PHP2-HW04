@@ -86,6 +86,7 @@ class View implements \Countable, \Iterator
         return null !== key($this->data);
     }
 
+
     public function rewind(): void
     {
         reset($this->data);

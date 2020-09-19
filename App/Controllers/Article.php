@@ -7,7 +7,8 @@ use \App\Models\Article as ArticleModel;
 class Article extends Controller
 {
 
-    public function access()
+
+    public function access(): bool
     {
         $Article = ArticleModel::findById($_GET['id']);
         if($Article->id == 2) {
@@ -17,7 +18,7 @@ class Article extends Controller
     }
 
 
-    protected function handle()
+    protected function handle(): void
     {
 
         $this->view->article = ArticleModel::findById($_GET['id']);

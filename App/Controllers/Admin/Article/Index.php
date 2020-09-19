@@ -5,7 +5,7 @@ use App\Controllers\Controller;
 use App\Models\Article;
 
 
-class ArticlesIndex extends Controller
+class index extends Controller
 {
     protected function handle()
     {
