@@ -23,7 +23,7 @@
                     <a class="nav-link" href="/">Новости</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/">Админка</a>
+                    <a class="nav-link" href="/?ctrl=admin">Админка</a>
                 </li>
             </ul>
         </div>
